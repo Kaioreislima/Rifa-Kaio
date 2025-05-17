@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rifa do Kaio ✂️</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Rifa Beneficente ✂️</h1>
+    <p>Sorteio para montagem do salão de barbeiro do <strong>@kaio_.cortes</strong></p>
+    <p>Prêmios:</p>
+    <ul>
+      <li>🥇 1º Lugar: R$500</li>
+      <li>🥈 2º Lugar: R$250</li>
+      <li>🥉 3º Lugar: R$250</li>
+    </ul>
+    <p>Cada número custa <strong>R$5,00</strong></p>
+
+    <div id="numbers-grid"></div>
+
+    <form id="reserva-form" action="https://formsubmit.co/kaioaugustolr@hotmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Reserva de número da Rifa">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="Obrigado por participar da nossa rifa! Entraremos em contato.">
+      <input type="hidden" name="_next" value="https://wa.me/5511949835125?text=Olá%2C+acabei+de+reservar+meus+números+na+rifa%21+Segue+comprovante%3A">
+
+      <label>Nome:</label>
+      <input type="text" name="nome" required>
+      <label>Telefone:</label>
+      <input type="text" name="telefone" required>
+      <label>Email:</label>
+      <input type="email" name="email" required>
+      <input type="hidden" name="números" id="selected-numbers-field">
+      <button type="submit">Reservar Números</button>
+    </form>
+    <div class="pix-info">
+      <h3>Pagamento via Pix:</h3>
+      <p>Chave Pix: <strong>11949835125</strong></p>
+      <img src="pix-qr.png" alt="QR Code Pix" width="200">
+    </div>
+  </div>
+</body>
+</html>
